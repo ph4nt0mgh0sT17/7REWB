@@ -1,9 +1,0 @@
-Wireframe hlavní stránka:
-	- Pro monitor: https://wireframe.cc/qVBlD6
-	- Pro tablet: https://wireframe.cc/j8S8d4
-	- Pro mobil: https://wireframe.cc/UyK1qh
-	
-Wireframe detail produktu:
-	- Pro monitor: https://wireframe.cc/c2vGmp
-	- Pro tablet: https://wireframe.cc/38uA5I
-	- Pro mobil: https://wireframe.cc/MNTTGO

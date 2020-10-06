@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>První Bootstrap web</title>
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./styl.css" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <div class="container">
+
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                <ul class="navbar-nav mr-auto">
+                 <li class="nav-item"><a class="nav-link" href="#">První</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#">Druhý</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Třetí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Čtvrtý</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pátý</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container">
+        <h1 class="text-center">Nadpis</h1>
+        <p class="lead text-justify">
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text 
+        </p>
+        </div>
+      </div>
+      
+     
+      <div class="container">
+        <nav aria-label="drobečková navigace">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Hlavní strana</a></li>
+            <li class="breadcrumb-item"><a href="#">Dokumenty</a></li>
+            <li class="breadcrumb-item"><a href="#">Fakultní dokumenty</a></li>
+            <li class="breadcrumb-item"><a href="#">Dokumenty katedry</a></li>
+            <li class="breadcrumb-item active">Dokumenty WAPMZ</li>
+          </ol>
+        </nav>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12 col-sm-12">
+            <h2>Sloupec 1</h2>
+            <button type="button" class="btn btn-danger">Zjistít více
+            </button>
+          </div>
+          <div class="col-md-4 col-12 col-sm-12">
+            <h2>Sloupec 2</h2>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#first-modal">Modální okno
+            </button>
+          </div>
+          <div class="col-md-4 col-12 col-sm-12">
+            <h2>Sloupec 3</h2>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#second-modal">Další modální okno
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <div id="first-modal" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Nadpis</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        úvodní text
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="second-modal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Nadpis</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md12">
+                                    <h2>
+                                        David Miko
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <img class="img-fluid" src="images/avatar.png"/>
+                                </div>
+
+                                <div class="col-md-6 col-6 d-flex flex-column justify-content-center">
+                                    <h3>Věk: 21</h3>
+                                    <h3>Zájmy: <span style="font-weight: bold">Programování, UNIX, Matematika</span></h3>
+                                    <h3>Předměty: <span style="font-weight: bold">7REWB, 7VYDA, 7PRCS</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </main>
+   
+      
+    <footer>
+      <p class="text-center">&copy; Bootstrap web 2020</p>
+    </footer>  
+    
+       
+    
+    <script src="./jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>            
+    
