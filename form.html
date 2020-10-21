@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>První Bootstrap web</title>
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./styl.css" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <div class="container">
+     
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+             <li class="nav-item"><a class="nav-link" href="./index.html">Hlavní strana</a></li>
+             <li class="nav-item"><a class="nav-link" href="./form.html">Formulář</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Třetí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Čtvrtý</a></li> 
+                <li class="nav-item"><a class="nav-link" href="#">Pátý</a></li> 
+            </ul>
+        </div>
+    </div>   
+    </nav>
+   
+    
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container">
+        <h1 class="text-center">Nadpis</h1>
+        <p class="lead text-justify">
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text
+        text text text text text text text text 
+        </p>
+        </div>
+      </div>
+      
+     
+      <div class="container">
+        <nav aria-label="drobečková navigace">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Hlavní strana</a></li>
+            <li class="breadcrumb-item active">Formulář</li>
+          </ol>
+        </nav>
+      </div>
+       <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Formuláře</h2>
+            
+          <h3>Přihlašovací formulář</h3>
+          <form class="form-inline">
+            <div class="form-group mb-2">
+              <label for="in-email" class="sr-only">E-mail</label>
+              <input type="text" readonly id="in-email" class="form-control-plaintext" value="test@osu.cz">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="in-password" class="sr-only">Heslo</label>
+              <input type="text" id="in-password" class="form-control" placeholder="zadej heslo">
+            </div>
+            <button type="submit" class="btn btn-success mb-2">Přihlásit</button>
+          </form>
+  
+          </div>
+
+        </div>
+           <div class="row">
+               <div class="col-md-12 mt-3">
+               <h3>Registrační formulář</h3>
+               </div>
+           </div>
+
+           <form class="needs-validation">
+               <div class="row mb-3">
+                   <div class="col-md-6">
+                       <label for="firstName">First name</label>
+                       <input type="text" id="firstName" class="form-control is-valid" value="" placeholder="name" required>
+                   </div>
+
+                   <div class="col-md-6">
+                       <label for="lastName">Last name</label>
+                       <input type="text" id="lastName" class="form-control is-invalid" value="" placeholder="name" required>
+                   </div>
+               </div>
+
+               <div class="mb-3">
+                   <label for="login">Login username</label>
+                   <div class="input-group">
+                       <div class="input-group-prepend">
+                           <span class="input-group-text">@</span>
+                       </div>
+                       <input type="text" class="form-control" id="login" placeholder="Input login username">
+                   </div>
+               </div>
+
+               <div class="mb-3">
+                   <label for="country">Country</label>
+                   <select class="custom-select" id="country" required>
+                       <option value="0">Vyberte</option>
+                       <option value="1">Czech Republic</option>
+                       <option value="2">Slovenian Republic</option>
+                   </select>
+               </div>
+
+               <div class="mb-3">
+                   <hr class="mb-3">
+                   <h3 class="mb-3">Your hobbies</h3>
+                   <div class="custom-control custom-checkbox">
+                       <input type="checkbox" class="custom-control-input" id="mountains" name="hobbies">
+                       <label class="custom-control-label" for="mountains">Mountains</label>
+                   </div>
+
+                   <div class="custom-control custom-checkbox">
+                       <input type="checkbox" class="custom-control-input" id="cinema" name="hobbies">
+                       <label class="custom-control-label" for="cinema">Cinema</label>
+                   </div>
+               </div>
+
+               <div class="mb-3">
+                   <hr class="mb-3">
+                   <h3 class="mb-3">Sex</h3>
+                   <div class="custom-control custom-radio">
+                       <input type="radio" class="custom-control-input" id="female" name="sex">
+                       <label class="custom-control-label" for="female">Female</label>
+                   </div>
+
+                   <div class="custom-control custom-radio">
+                       <input type="radio" class="custom-control-input" id="male" name="sex">
+                       <label class="custom-control-label" for="male">Male</label>
+                   </div>
+               </div>
+
+               <div class="mb-3">
+                   <hr class="mb-3">
+                   <label for="note">Note</label>
+                   <textarea class="form-control" id="note" rows="3"></textarea>
+               </div>
+
+               <div class="row">
+                   <button class="btn btn-primary btn-lg" type="submit">Send</button>
+               </div>
+
+           </form>
+
+
+      </div>
+    
+      
+    </main>
+   
+      
+    <footer>
+      <p class="text-center">&copy; Bootstrap web 2020</p>
+    </footer>  
+    
+       
+    
+    <script src="./jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script> 
+
+</body>
+</html>            
+    

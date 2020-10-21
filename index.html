@@ -14,24 +14,24 @@
   <body>
 
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-         <div class="container">
-
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarNavDropdown" class="navbar-collapse collapse">
-                <ul class="navbar-nav mr-auto">
-                 <li class="nav-item"><a class="nav-link" href="#">První</a></li>
-                 <li class="nav-item"><a class="nav-link" href="#">Druhý</a></li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Třetí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Čtvrtý</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pátý</a></li>
-                </ul>
-            </div>
+     <div class="container">
+     
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+             <li class="nav-item"><a class="nav-link" href="./index.html">Hlavní strana</a></li>
+             <li class="nav-item"><a class="nav-link" href="./form.html">Formulář</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Třetí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Čtvrtý</a></li> 
+                <li class="nav-item"><a class="nav-link" href="#">Pátý</a></li> 
+            </ul>
         </div>
+    </div>   
     </nav>
    
     
@@ -61,7 +61,7 @@
             <li class="breadcrumb-item"><a href="#">Dokumenty</a></li>
             <li class="breadcrumb-item"><a href="#">Fakultní dokumenty</a></li>
             <li class="breadcrumb-item"><a href="#">Dokumenty katedry</a></li>
-            <li class="breadcrumb-item active">Dokumenty WAPMZ</li>
+            <li class="breadcrumb-item active">Dokumenty 7REWB</li>
           </ol>
         </nav>
       </div>
@@ -75,74 +75,69 @@
           </div>
           <div class="col-md-4 col-12 col-sm-12">
             <h2>Sloupec 2</h2>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#first-modal">Modální okno
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal1">Modální okno
             </button>
           </div>
           <div class="col-md-4 col-12 col-sm-12">
             <h2>Sloupec 3</h2>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#second-modal">Další modální okno
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal2">Další modální okno
             </button>
           </div>
         </div>
       </div>
-
-        <div id="first-modal" class="modal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Nadpis</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        úvodní text
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+      
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">   
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nadpis</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>úvodní text</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
+          </div>
+        </div>  
+      </div>
+    </div>       
+      
+   <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">   
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nadpis</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <h2>Pavel Novák</h2>
+              </div>
             </div>
-        </div>
-
-        <div id="second-modal" class="modal fade" tabindex="-1">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Nadpis</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md12">
-                                    <h2>
-                                        David Miko
-                                    </h2>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 col-12">
-                                    <img class="img-fluid" src="images/avatar.png"/>
-                                </div>
-
-                                <div class="col-md-6 col-6 d-flex flex-column justify-content-center">
-                                    <h3>Věk: 21</h3>
-                                    <h3>Zájmy: <span style="font-weight: bold">Programování, UNIX, Matematika</span></h3>
-                                    <h3>Předměty: <span style="font-weight: bold">7REWB, 7VYDA, 7PRCS</span></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <img class="img-fluid" src="./user.png" alt="Pavel Novák">
+              </div>
+              <div class="col-md-6 col-12">
+                <h4>Věk: <b>25</b></h4>
+                <h4>Zájmy: <b>kytara, kino, nakupování</b></h4>
+                <h4>Předměty: <b>ALDS1, ALDS2, OPSY1</b></h4>
+              </div>
             </div>
-        </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
+          </div>
+        </div>  
+      </div>
+    </div>  
+    
       
     </main>
    
@@ -154,7 +149,7 @@
        
     
     <script src="./jquery.min.js"></script>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script> 
 
 </body>
 </html>            
