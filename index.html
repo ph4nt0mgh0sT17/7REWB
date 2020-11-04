@@ -1,159 +1,138 @@
 <!DOCTYPE html>
 <html lang="cs">
 
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
     <title>První Bootstrap web</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="./styl.css" rel="stylesheet">
-    
-  </head>
-  
-  <body>
 
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-     <div class="container">
-     
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
         <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
-             <li class="nav-item"><a class="nav-link" href="./index.html">Hlavní strana</a></li>
-             <li class="nav-item"><a class="nav-link" href="./form.html">Formulář</a></li>
-             <li class="nav-item"><a class="nav-link" href="./table.html">Tabulka</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html">Hlavní strana</a></li>
+                <li class="nav-item"><a class="nav-link" href="./form.html">Formulář</a></li>
+                <li class="nav-item"><a class="nav-link" href="./table.html">Tabulka</a></li>
                 <li class="nav-item"><a class="nav-link" href="./hokej.html">Hokej</a></li>
-             <li class="nav-item"><a class="nav-link" href="./datatable.html">Datatable</a></li>
+                <li class="nav-item"><a class="nav-link" href="./datatable.html">Datatable</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="dropdown01">Rozbalovaci
+                        menu</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Prvni</a>
+                        <a class="dropdown-item" href="#">Druhy</a>
+                        <a class="dropdown-item" href="#">Treti</a>
+                    </div>
+                </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#">Třetí</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Čtvrtý</a></li> 
-                <li class="nav-item"><a class="nav-link" href="#">Pátý</a></li> 
+                <li class="nav-item"><a class="nav-link" href="#">Čtvrtý</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pátý</a></li>
             </ul>
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search ..." type="search">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-    </div>   
-    </nav>
-   
-    
-    <main role="main">
-      <div class="jumbotron">
-        <div class="container">
-        <h1 class="text-center">Nadpis</h1>
-        <p class="lead text-justify">
-        text text text text text text text text
-        text text text text text text text text
-        text text text text text text text text
-        text text text text text text text text
-        text text text text text text text text
-        text text text text text text text text
-        text text text text text text text text
-        text text text text text text text text
-        text text text text text text text text 
-        </p>
-        </div>
-      </div>
-      
-     
-      <div class="container">
-        <nav aria-label="drobečková navigace">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Hlavní strana</a></li>
-            <li class="breadcrumb-item"><a href="#">Dokumenty</a></li>
-            <li class="breadcrumb-item"><a href="#">Fakultní dokumenty</a></li>
-            <li class="breadcrumb-item"><a href="#">Dokumenty katedry</a></li>
-            <li class="breadcrumb-item active">Dokumenty 7REWB</li>
-          </ol>
-        </nav>
-      </div>
-      
-      <div class="container">
+    </div>
+</nav>
+
+<main role="main">
+    <div class="container">
         <div class="row">
-          <div class="col-md-4 col-12 col-sm-12">
-            <h2>Sloupec 1</h2>
-            <button type="button" class="btn btn-danger">Zjistít více
-            </button>
-          </div>
-          <div class="col-md-4 col-12 col-sm-12">
-            <h2>Sloupec 2</h2>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal1">Modální okno
-            </button>
-          </div>
-          <div class="col-md-4 col-12 col-sm-12">
-            <h2>Sloupec 3</h2>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal2">Další modální okno
-            </button>
-          </div>
+             <div class="col-md-12">
+                 <h1 class="text-center actually my-3">News</h1>
+             </div>
         </div>
-      </div>
-      
-    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">   
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Nadpis</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>úvodní text</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
-          </div>
-        </div>  
-      </div>
-    </div>       
-      
-   <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">   
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Nadpis</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-12">
-                <h2>Pavel Novák</h2>
-              </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 main-news">
+                <a href="./detail.html"><img class="img-fluid" src="./images/1.jpg" alt="Prague spring"></a>
+                <h2 class="text-center"><a href="./detail.html">Prague spring</a></h2>
+                <p class="text-center date"><strong>1/11/2020</strong></p>
+                <p class="text-justify">
+                    Mezinárodní hudební festival Pražské jaro je pravidelná přehlídka vynikajících světových umělců,
+                    symfonických orchestrů a komorních těles.
+                    Koná se každoročně v Praze od 12. května (výročí úmrtí Bedřicha Smetany) do 4. června.
+                    Je od svého počátku reprezentativní přehlídkou světové hudební kultury a jejích nejnovějších trendů.
+                </p>
+                <p class="text-center"><a class="btn btn-success" href="./detail.html">Read more ...</a></p>
             </div>
-            <div class="row">
-              <div class="col-md-6 col-12">
-                <img class="img-fluid" src="./user.png" alt="Pavel Novák">
-              </div>
-              <div class="col-md-6 col-12">
-                <h4>Věk: <b>25</b></h4>
-                <h4>Zájmy: <b>kytara, kino, nakupování</b></h4>
-                <h4>Předměty: <b>ALDS1, ALDS2, OPSY1</b></h4>
-              </div>
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6 main-news">
+                <a href="./detail.html"><img class="img-fluid" src="./images/2.jpg" alt="Vltava"></a>
+                <h2 class="text-center"><a href="./detail.html">Vltava</a></h2>
+                <p class="text-center date"><strong>2/11/2020</strong></p>
+                <p class="text-justify">
+                    Vltava (německy Moldau) je s délkou 430,2 km[1] nejdelší řekou na území Česka.
+                    Pramení na Šumavě, u obce Černý Kříž, soutokem Teplé Vltavy a Studené Vltavy.
+                    Protéká mimo jiné Českým Krumlovem, Českými Budějovicemi a Prahou a ústí zleva do Labe v Mělníku.
+                    Povodí Vltavy s přítoky Malší, Lužnicí, Otavou, Sázavou a Berounkou zaujímá jižní část Čech.
+                </p>
+                <p class="text-center"><a class="btn btn-success" href="./detail.html">Read more ...</a></p>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
-          </div>
-        </div>  
-      </div>
-    </div>  
-    
-      
-    </main>
-   
-      
-    <footer>
-      <p class="text-center">&copy; Bootstrap web 2020</p>
-    </footer>  
-    
-       
-    
-    <script src="./jquery.min.js"></script>
-    <script src="./bootstrap/js/bootstrap.min.js"></script> 
+
+            <div class="col-lg-3 col-md-6 col-sm-6 main-news">
+                <a href="./detail.html"><img class="img-fluid" src="./images/1.jpg" alt="Prague spring"></a>
+                <h2 class="text-center"><a href="./detail.html">Prague spring</a></h2>
+                <p class="text-center date"><strong>1/11/2020</strong></p>
+                <p class="text-justify">
+                    Mezinárodní hudební festival Pražské jaro je pravidelná přehlídka vynikajících světových umělců,
+                    symfonických orchestrů a komorních těles.
+                    Koná se každoročně v Praze od 12. května (výročí úmrtí Bedřicha Smetany) do 4. června.
+                    Je od svého počátku reprezentativní přehlídkou světové hudební kultury a jejích nejnovějších trendů.
+                </p>
+                <p class="text-center"><a class="btn btn-success" href="./detail.html">Read more ...</a></p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 main-news">
+                <a href="./detail.html"><img class="img-fluid" src="./images/2.jpg" alt="Vltava"></a>
+                <h2 class="text-center"><a href="./detail.html">Vltava</a></h2>
+                <p class="text-center date"><strong>2/11/2020</strong></p>
+                <p class="text-justify">
+                    Vltava (německy Moldau) je s délkou 430,2 km[1] nejdelší řekou na území Česka.
+                    Pramení na Šumavě, u obce Černý Kříž, soutokem Teplé Vltavy a Studené Vltavy.
+                    Protéká mimo jiné Českým Krumlovem, Českými Budějovicemi a Prahou a ústí zleva do Labe v Mělníku.
+                    Povodí Vltavy s přítoky Malší, Lužnicí, Otavou, Sázavou a Berounkou zaujímá jižní část Čech.
+                </p>
+                <p class="text-center"><a class="btn btn-success" href="./detail.html">Read more ...</a></p>
+            </div>
+
+            <div class="col-md-12">
+                <p class="text-center"><a class="btn btn-info btn-next" href="#">Next actual news</a></p>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+<footer>
+    <p class="text-center">&copy; Bootstrap web 2020</p>
+</footer>
+
+
+<script src="./jquery.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
 
 </body>
-</html>            
-    
+</html>

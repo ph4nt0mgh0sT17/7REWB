@@ -1,10 +1,17 @@
+
+* {
+  font-family: 'Oswald', Arial, SansSerif, serif;
+}
+
 footer
 {
-  background-color:#343A40;
   color:#fff;
-  padding:20px 0px 10px 0px;
-  margin-top:10px;
+  margin-top:20px;
+  background-color:#343A40;
+  padding-top:20px;
+  padding-bottom:10px;
 }
+
 
 /*
     Colors the points in the Table
@@ -12,4 +19,39 @@ footer
 .hockey-points {
   background-color: yellow !important;
   color:black !important;
+}
+
+.btn-next {
+  font-size: 150%;
+  padding: 10px;
+}
+
+@media(max-width: 575.98px) {
+  .main-news {
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #aaa;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .main-news {
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border:5px solid #aaa;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .main-news p {
+    font-size: 130%;
+  }
+
+  p.date {
+    color:red;
+  }
+}
+
+.date-news {
+  font-size: 110%;
 }
