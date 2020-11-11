@@ -1,138 +1,471 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <title>První Bootstrap web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="./styl.css" rel="stylesheet">
+  <title>Šablona</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+  <link href="styl.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body id="page-top">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
-
-        <a class="navbar-brand" href="#">Logo</a>
-        <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler"
-                data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Hlavní strana</a></li>
-                <li class="nav-item"><a class="nav-link" href="./form.html">Formulář</a></li>
-                <li class="nav-item"><a class="nav-link" href="./table.html">Tabulka</a></li>
-                <li class="nav-item"><a class="nav-link" href="./hokej.html">Hokej</a></li>
-                <li class="nav-item"><a class="nav-link" href="./datatable.html">Datatable</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="dropdown01">Rozbalovaci
-                        menu</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Prvni</a>
-                        <a class="dropdown-item" href="#">Druhy</a>
-                        <a class="dropdown-item" href="#">Treti</a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">Třetí</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Čtvrtý</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Pátý</a></li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0 ml-auto">
-                <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search ..." type="search">
-                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Ostravská univerzita</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">O nás</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Služby</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#faculties">Fakulty</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Kontaktujte nás</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<main role="main">
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold">Ostravská univerzita</h1>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 font-weight-light mb-5">Ostravská univerzita je univerzita v Ostravě, která ...</p>
+          <p><a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Přečtěte si něco o nás</a></p>
+          <p><a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Naše služby</a></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary" id="about">
     <div class="container">
-        <div class="row">
-             <div class="col-md-12">
-                 <h1 class="text-center actually my-3">News</h1>
-             </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">Jsme Ostravská!</h2>
+          <hr class="divider light my-4">
+          <p class="text-white-50 mb-4">Naše univerzita nabízí tyto služby</p>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Podívejte se na naše služby</a>
         </div>
-
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 main-news">
-                <a href="./detail.html"><img class="img-fluid" src="./images/1.jpg" alt="Prague spring"></a>
-                <h2 class="text-center"><a href="./detail.html">Prague spring</a></h2>
-                <p class="text-center date"><strong>1/11/2020</strong></p>
-                <p class="text-justify">
-                    Mezinárodní hudební festival Pražské jaro je pravidelná přehlídka vynikajících světových umělců,
-                    symfonických orchestrů a komorních těles.
-                    Koná se každoročně v Praze od 12. května (výročí úmrtí Bedřicha Smetany) do 4. června.
-                    Je od svého počátku reprezentativní přehlídkou světové hudební kultury a jejích nejnovějších trendů.
-                </p>
-                <p class="text-center"><a class="btn btn-success" href="./detail.html">Read more ...</a></p>
-            </div>
-
-
-
-            <div class="col-lg-3 col-md-6 col-sm-6 main-news">
-                <a href="./detail.html"><img class="img-fluid" src="./images/2.jpg" alt="Vltava"></a>
-                <h2 class="text-center"><a href="./detail.html">Vltava</a></h2>
-                <p class="text-center date"><strong>2/11/2020</strong></p>
-                <p class="text-justify">
-                    Vltava (německy Moldau) je s délkou 430,2 km[1] nejdelší řekou na území Česka.
-                    Pramení na Šumavě, u obce Černý Kříž, soutokem Teplé Vltavy a Studené Vltavy.
-                    Protéká mimo jiné Českým Krumlovem, Českými Budějovicemi a Prahou a ústí zleva do Labe v Mělníku.
-                    Povodí Vltavy s přítoky Malší, Lužnicí, Otavou, Sázavou a Berounkou zaujímá jižní část Čech.
-                </p>
-                <p class="text-center"><a class="btn btn-success" href="./detail.html">Read more ...</a></p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6 main-news">
-                <a href="./detail.html"><img class="img-fluid" src="./images/1.jpg" alt="Prague spring"></a>
-                <h2 class="text-center"><a href="./detail.html">Prague spring</a></h2>
-                <p class="text-center date"><strong>1/11/2020</strong></p>
-                <p class="text-justify">
-                    Mezinárodní hudební festival Pražské jaro je pravidelná přehlídka vynikajících světových umělců,
-                    symfonických orchestrů a komorních těles.
-                    Koná se každoročně v Praze od 12. května (výročí úmrtí Bedřicha Smetany) do 4. června.
-                    Je od svého počátku reprezentativní přehlídkou světové hudební kultury a jejích nejnovějších trendů.
-                </p>
-                <p class="text-center"><a class="btn btn-success" href="./detail.html">Read more ...</a></p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6 main-news">
-                <a href="./detail.html"><img class="img-fluid" src="./images/2.jpg" alt="Vltava"></a>
-                <h2 class="text-center"><a href="./detail.html">Vltava</a></h2>
-                <p class="text-center date"><strong>2/11/2020</strong></p>
-                <p class="text-justify">
-                    Vltava (německy Moldau) je s délkou 430,2 km[1] nejdelší řekou na území Česka.
-                    Pramení na Šumavě, u obce Černý Kříž, soutokem Teplé Vltavy a Studené Vltavy.
-                    Protéká mimo jiné Českým Krumlovem, Českými Budějovicemi a Prahou a ústí zleva do Labe v Mělníku.
-                    Povodí Vltavy s přítoky Malší, Lužnicí, Otavou, Sázavou a Berounkou zaujímá jižní část Čech.
-                </p>
-                <p class="text-center"><a class="btn btn-success" href="./detail.html">Read more ...</a></p>
-            </div>
-
-            <div class="col-md-12">
-                <p class="text-center"><a class="btn btn-info btn-next" href="#">Next actual news</a></p>
-            </div>
-        </div>
-
-
+      </div>
     </div>
-</main>
+  </section>
 
-<footer>
-    <p class="text-center">&copy; Bootstrap web 2020</p>
-</footer>
+  <!-- Services Section -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <h2 class="text-center mt-0">Naše služby</h2>
+      <hr class="divider my-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-book-open text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Studium</h3>
+            <p class="text-muted mb-0">popis</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-chalkboard-teacher text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Výuka</h3>
+            <p class="text-muted mb-0">popis</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Erasmus studium</h3>
+            <p class="text-muted mb-0">popis</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-user-graduate text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Jsme tu pro Vás</h3>
+            <p class="text-muted mb-0">popis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Faculties Section -->
+  <section class="page-section" id="faculties">
+    <div class="container">
+      <h2 class="text-center mt-0">Naše fakulty</h2>
+      <hr class="divider my-4">
+      <div class="row">
+        <div class="col-lg-2 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-book-reader text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Fakulta sociálních studií</h3>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-book-reader text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Pedagogická fakulta</h3>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-book-reader text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Fakulta umění</h3>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-book-reader text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Filozofická fakulta</h3>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-book-reader text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Lékařská fakulta</h3>
+          </div>
+        </div>
 
-<script src="./jquery.min.js"></script>
-<script src="./bootstrap/js/bootstrap.min.js"></script>
+        <div class="col-lg-2 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-book-reader text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Přírodovědecká fakulta</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Kategorie 1
+              </div>
+              <div class="project-name">
+                Projekt 1
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Kategorie 2
+              </div>
+              <div class="project-name">
+                Projekt 2
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+               Kategorie 3
+              </div>
+              <div class="project-name">
+                Project 1
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Kategorie 1
+              </div>
+              <div class="project-name">
+                Projekt 4
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Kategorie
+              </div>
+              <div class="project-name">
+                Projekt 5
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">
+                Kategorie
+              </div>
+              <div class="project-name">
+                Projekt 6
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="page-section bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Ke stažení</h2>
+      <a class="btn btn-light btn-xl" href="#" data-toggle="modal" data-target="#download-modal">Stáhnout</a>
+    </div>
+
+    <div id="download-modal" class="modal" tabindex="-1" style="color: black;">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Soubory ke stáhnutí</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" >
+            <div class="container">
+              <div class="row border-bottom pb-2">
+                <div class="col-6 d-flex align-items-center">
+                  osu-dokumentace.pdf
+                </div>
+
+                <div class="col-6 d-flex justify-content-end">
+                  <button class="btn btn-primary">Stáhnout</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom pb-2 pt-2">
+                <div class="col-6 d-flex align-items-center">
+                  osu-formular.pdf
+                </div>
+
+                <div class="col-6 d-flex justify-content-end">
+                  <button class="btn btn-primary">Stáhnout</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom pb-2 pt-2">
+                <div class="col-6 d-flex align-items-center">
+                  osu-dekani.pdf
+                </div>
+
+                <div class="col-6 d-flex justify-content-end">
+                  <button class="btn btn-primary">Stáhnout</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom pb-2 pt-2">
+              <div class="col-6 d-flex align-items-center">
+                prf-dokumentace.pdf
+              </div>
+
+              <div class="col-6 d-flex justify-content-end">
+                <button class="btn btn-primary">Stáhnout</button>
+              </div>
+            </div>
+
+              <div class="row border-bottom pb-2 pt-2">
+                <div class="col-6 d-flex align-items-center">
+                  prf-formular.pdf
+                </div>
+
+                <div class="col-6 d-flex justify-content-end">
+                  <button class="btn btn-primary">Stáhnout</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom pb-2 pt-2">
+                <div class="col-6 d-flex align-items-center">
+                  prf-dekani.pdf
+                </div>
+
+                <div class="col-6 d-flex justify-content-end">
+                  <button class="btn btn-primary">Stáhnout</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom pb-2 pt-2">
+                <div class="col-6 d-flex align-items-center">
+                  pdf-dokumentace.pdf
+                </div>
+
+                <div class="col-6 d-flex justify-content-end">
+                  <button class="btn btn-primary">Stáhnout</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom pb-2 pt-2">
+                <div class="col-6 d-flex align-items-center">
+                  pdf-formular.pdf
+                </div>
+
+                <div class="col-6 d-flex justify-content-end">
+                  <button class="btn btn-primary">Stáhnout</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom pb-2 pt-2">
+                <div class="col-6 d-flex align-items-center">
+                  pdf-dekani.pdf
+                </div>
+
+                <div class="col-6 d-flex justify-content-end">
+                  <button class="btn btn-primary">Stáhnout</button>
+                </div>
+              </div>
+
+              <div class="row pt-2">
+                <div class="col-6 d-flex align-items-center">
+                  osu-konzultace.pdf
+                </div>
+
+                <div class="col-6 d-flex justify-content-end">
+                  <button class="btn btn-primary">Stáhnout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Jsme tu pro Vás!</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">Zavolejte nám nebo napiště</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+          <div>+420 558 111 222</div>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+          <a class="d-block" href="mailto:info@osu.cz">info@osu.cz</a>
+        </div>
+      </div>
+
+      <div class="row justify-content-center border-top pt-2 mt-5">
+        <h1 class="text-center">Formulář k odeslání emailu</h1>
+      </div>
+
+      <div class="row pt-2 mt-5">
+        <form class="flex-grow-1 mx-5">
+          <div class="form-group">
+            <label for="firstName">Jméno</label>
+            <input type="text" class="form-control" placeholder="Vložte své jméno" required id="firstName">
+          </div>
+
+          <div class="form-group">
+            <label for="lastName" class="mr-2">Příjmení</label>
+            <input type="text" class="form-control" placeholder="Vložte své příjmení" required id="lastName">
+          </div>
+
+          <div class="form-group">
+            <label for="category" class="mr-2">Kategorie</label>
+            <select class="form-control" id="category">
+              <option>Studium</option>
+              <option>Věda a výzkum</option>
+              <option>Obecné</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="mr-2">Email</label>
+            <input type="email" class="form-control" placeholder="Vložte svůj email" id="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="mr-2">Zpráva</label>
+            <textarea  class="form-control" id="message" rows="3"></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Odeslat</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="small text-center text-white footer-text">Copyright &copy; 2020  Bootstrap web</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
 
 </body>
+
 </html>
