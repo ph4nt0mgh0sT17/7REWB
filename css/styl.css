@@ -1,0 +1,348 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+body {
+    padding-top: 3rem;
+    color: #5a5a5a;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.blue {
+    color: #05386B !important;
+}
+
+.blue-hover:hover {
+    color: #05386B !important;
+}
+
+.red {
+     color: #FC4445 !important;
+}
+
+.red-hover:hover {
+    color: #FC4445 !important;
+}
+
+@media (min-width: 768px) {
+    .logo-border {
+        border-left: 1px solid #dee2e6 !important;
+    }
+}
+
+.carousel-item > img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title-line {
+    padding-bottom: 10px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-color: rgb(237,128,52); /* Old browsers */
+    border-image-source: -moz-linear-gradient(left, rgb(237,128,52) 0%, rgb(237,128,52) 14%, rgb(0,0,0) 14%); /* FF3.6-15 */
+    border-image-source: -webkit-linear-gradient(left, rgb(237,128,52) 0%,rgb(237,128,52) 14%,rgb(0,0,0) 14%); /* Chrome10-25,Safari5.1-6 */
+    border-image-source: linear-gradient(to right, rgb(237,128,52) 0%,rgb(237,128,52) 14%,rgb(0,0,0) 14%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed8034', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+
+.badge-row {
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.badge-row span.badge {
+    margin-right: 5px;
+}
+
+.badge-row span.badge:last-child {
+    margin-right: 0px;
+}
+
+img.product-thumbnail {
+    width: 150px;
+    height: 200px;
+}
+
+.product-price {
+    color: #007bff;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.product-box {
+    border: 1px solid #dee2e6;
+    padding:20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.product-box a {
+    text-decoration: none !important;
+}
+
+.product-box:hover {
+    box-shadow: #007bff 0px 5px 15px;
+}
+
+.product-box a.game-name {
+    color: black !important;
+}
+
+.game-name {
+    -webkit-transition: all 0.25s ease 0s;
+}
+
+.product-box:hover a.game-name {
+    color: #007bff !important;
+}
+
+@media (max-width: 767.99px) {
+    .product-description {
+        border-top: 1px solid #dee2e6;
+    }
+}
+
+@media (min-width: 768px) {
+    .product-description {
+        border-top: 0;
+    }
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: whitesmoke;
+}
+
+.description-title {
+    color: #007bff;
+}
+
+#gamesDropdownLink:hover div.dropdown-menu {
+    display: block;
+}
+
+.nav-link.active:hover {
+    color: #007bff !important;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+
+
+.name-price-container {
+    min-height: 100px;
+}
+
+.over-75-rating {
+    color: #FC4445;
+}
+
+.over-50-rating {
+    color: #007bff;
+}
+
+.reviewer-name {
+    color: black;
+}
+
+ul.positive-points {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul.positive-points li {
+    margin-bottom: 25px;
+    background: url("../images/icons/positive-point.svg") no-repeat left;
+    height: 34px;
+    padding-top: 7px;
+    padding-left: 44px;
+}
+
+ul.negative-points {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul.negative-points li {
+    margin-bottom: 25px;
+    background: url("../images/icons/negative-point.svg") no-repeat left;
+    height: 34px;
+    padding-top: 7px;
+    padding-left: 44px;
+}
+
+@media(min-width: 576px) {
+    .border-bottom-sm {
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+
+    .border-top-sm {
+        border-top: 1px solid #dee2e6 !important;
+    }
+
+    .border-left-sm {
+        border-left: 1px solid #dee2e6 !important;
+    }
+
+    .border-right-sm {
+        border-right: 1px solid #dee2e6 !important;
+    }
+
+    .border-bottom-sm-0 {
+        border-bottom: 0 !important;
+    }
+
+    .border-top-sm-0 {
+        border-top: 0 !important;
+    }
+
+    .border-left-sm-0 {
+        border-left: 0 !important;
+    }
+
+    .border-right-sm-0 {
+        border-right: 0 !important;
+    }
+}
+
+@media(min-width: 768px) {
+    .border-bottom-md {
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+
+    .border-top-md {
+        border-top: 1px solid #dee2e6 !important;
+    }
+
+    .border-left-md {
+        border-left: 1px solid #dee2e6 !important;
+    }
+
+    .border-right-md {
+        border-right: 1px solid #dee2e6 !important;
+    }
+
+    .border-bottom-md-0 {
+        border-bottom: 0 !important;
+    }
+
+    .border-top-md-0 {
+        border-top: 0 !important;
+    }
+
+    .border-left-md-0 {
+        border-left: 0 !important;
+    }
+
+    .border-right-md-0 {
+        border-right: 0 !important;
+    }
+}
+
+@media(min-width: 992px) {
+    .border-bottom-lg {
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+
+    .border-top-lg {
+        border-top: 1px solid #dee2e6 !important;
+    }
+
+    .border-left-lg {
+        border-left: 1px solid #dee2e6 !important;
+    }
+
+    .border-right-lg {
+        border-right: 1px solid #dee2e6 !important;
+    }
+
+    .border-bottom-lg-0 {
+        border-bottom: 0 !important;
+    }
+
+    .border-top-lg-0 {
+        border-top: 0 !important;
+    }
+
+    .border-left-lg-0 {
+        border-left: 0 !important;
+    }
+
+    .border-right-lg-0 {
+        border-right: 0;
+    }
+}
+
+@media(min-width: 1200px) {
+    .border-bottom-xl {
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+
+    .border-top-xl {
+        border-top: 1px solid #dee2e6 !important;
+    }
+
+    .border-left-xl {
+        border-left: 1px solid #dee2e6 !important;
+    }
+
+    .border-right-xl {
+        border-right: 1px solid #dee2e6 !important;
+    }
+
+    .border-bottom-xl-0 {
+        border-bottom: 0 !important;
+    }
+
+    .border-top-xl-0 {
+        border-top: 0 !important;
+    }
+
+    .border-left-xl-0 {
+        border-left: 0 !important;
+    }
+
+    .border-right-xl-0 {
+        border-right: 0 !important;
+    }
+}
+
+.btn-cart {
+    background-color: orange;
+}
+
+.btn-cart a {
+    color: white;
+    text-decoration: none;
+}
+
+a.product-tab.active:hover {
+    color:white !important;
+}
+
+@media(max-width: 767.99px) {
+    .text-nowrap-md {
+        white-space: nowrap !important;
+    }
+
+    .text-wrap-md {
+        white-space: initial !important;
+    }
+}
+
+.delivery-price {
+    color: #007bff;
+}
